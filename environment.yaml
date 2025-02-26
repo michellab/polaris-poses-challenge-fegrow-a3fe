@@ -1,0 +1,25 @@
+name: polaris-challenge-a3fe
+channels:
+  - conda-forge
+  - openbiosim/label/dev
+  - michellab/label/dev
+  - defaults
+dependencies:
+  - arviz
+  - pandas
+  - python[version='>=3.9']
+  - pip
+  - numpy
+  - matplotlib
+  - scipy
+  - ipython
+  - pymbar[version='<4']
+  - ambertools
+  - biosimspace[version='>2023.4']
+  - pydantic
+  - polaris
+  - ca-certificates
+  - certifi
+  - openssl
+  - pip:
+      - git+https://github.com/michellab/a3fe.git
