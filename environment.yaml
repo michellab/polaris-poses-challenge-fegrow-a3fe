@@ -7,7 +7,7 @@ channels:
 dependencies:
   - arviz
   - pandas
-  - python[version='>=3.9']
+  - python=3.11
   - pip
   - numpy
   - matplotlib
@@ -17,9 +17,12 @@ dependencies:
   - ambertools
   - biosimspace[version='>2023.4']
   - pydantic
-  - polaris
+  - polaris=0.11.8
   - ca-certificates
   - certifi
   - openssl
+  - cuda-version=12.5
+  - pymol-open-source
+  - openeye-toolkits
   - pip:
       - git+https://github.com/michellab/a3fe.git

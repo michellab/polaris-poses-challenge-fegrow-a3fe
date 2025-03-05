@@ -1,11 +1,11 @@
 # Polaris Pose Prediction Challenge - ABFE Component of "newcastle-edinburgh-fegrow-a3fe" Submission
 
-Code and inputs to reproduce the ABFE component of the "newcastle-edinburgh-fegrow-a3fe" submission to the [Polaris Pose Prediction Challenge](https://polarishub.io/competitions/asap-discovery/antiviral-ligand-poses-2025), from Finlay Clark, Asma Feriel Khoualdi, Josh Horton, Julien Michel and Daniel Cole. The total cost of the ABFE runs was ~ 7000 GPU hours (for ~ 700 ABFE calculations of 5 replicate runs each), mainly on RTX3080 GPUs.
+Code and inputs to reproduce the ABFE component of the "newcastle-edinburgh-fegrow-a3fe-equilibrated-no-training" submission to the [Polaris Pose Prediction Challenge](https://polarishub.io/competitions/asap-discovery/antiviral-ligand-poses-2025), from Finlay Clark, Asma Feriel Khoualdi, Josh Horton, Julien Michel and Daniel Cole. The total cost of the ABFE runs was ~ 7000 GPU hours (for ~ 700 ABFE calculations of 5 replicate runs each), mainly on RTX3080 GPUs.
 
 ## Method Details
 
- - Poses generated with constrained geometry optimisation with ML/MM (ANI), using [FEGrow](https://github.com/cole-group/FEgrow)
- - Poses scored using fast ABFE runs (0.1 ns / lambda window, 5 replicate runs with independent equilibration) using [A3FE](https://github.com/michellab/a3fe)
+ - Poses generated with constrained geometry optimisation with ML/MM (ANI), using [FEGrow](https://github.com/cole-group/FEgrow) (**no training data used** - this was likely a poor choice)
+ - Poses scored using fast ABFE runs (0.1 ns / lambda window, 5 replicate runs with independent equilibration) using [A3FE](https://github.com/michellab/a3fe). The MD-equilibrated poses (0.2 ns) were submitted.
 
 For more details, see
 
